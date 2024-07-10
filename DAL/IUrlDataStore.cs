@@ -1,6 +1,6 @@
-﻿namespace ConsoleApp3;
+﻿namespace ShortUrlSrv.App.DAL;
 
-public interface IUrlDataStore 
+public interface IUrlDataStore
 {
     public bool DeleteShortID(string shortID);
 

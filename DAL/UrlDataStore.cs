@@ -1,21 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.IDisposable;
-
-namespace ConsoleApp3;
+﻿namespace ShortUrlSrv.App.DAL;
 
 internal class UrlDataStore : IUrlDataStore
 {
     private Dictionary<int, string> _urlStore = new();
     private int _currentKey = 0;
-    
+
     public string SaveLongID(string longID)
     {
-        if (String.IsNullOrEmpty(longID))
+        if (string.IsNullOrEmpty(longID))
             throw new Exception("Ссылка пустая!");
         if (_urlStore.ContainsKey(_currentKey))
             _urlStore.Add(_currentKey, longID);
@@ -32,7 +24,7 @@ internal class UrlDataStore : IUrlDataStore
         if (searchedKey > _currentKey)
             throw new IndexOutOfRangeException();
         return _urlStore[searchedKey];
-                 
+
     }
 
 

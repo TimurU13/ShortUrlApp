@@ -1,5 +1,4 @@
-﻿
-namespace CutReference;
+﻿namespace ShortUrlSrv.App;
 
 class Program
 {
