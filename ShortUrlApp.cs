@@ -1,10 +1,17 @@
-﻿namespace ShortUrlSrv.App;
+﻿using ShortUrlSrv.App.DAL;
+
+namespace ShortUrlSrv.App;
 
 public class ShortUrlApp : IShortUrlApp
 {
+    private readonly IUrlDataStore _urlDataStore;
+    public ShortUrlApp(IUrlDataStore urlDataStore)
+    {
+        _urlDataStore = urlDataStore;
+    }
     public bool DeleteShortUrl(string shortUrl)
     {
-        throw new NotImplementedException();
+        return _urlDataStore.DeleteShortID(shortUrl);
     }
 
     public string GetLongUrl(string shortUrl)
@@ -23,14 +30,14 @@ public class ShortUrlApp : IShortUrlApp
         else
         {
             string shortId = uri.Segments[1];
-            return "dsdss";
+            return _urlDataStore.GetLongUrl(shortId);
         }
 
     }
     public string SaveUrl(string longUrl)
     {
         string shortUrl = "https://myshorturl.io/";
-        int shortId = 1;
+        string shortUrlId=_urlDataStore.SaveLongUrl(longUrl);
         Uri uriResult;
         bool result = Uri.TryCreate(longUrl, UriKind.Absolute, out uriResult)
             && (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps);
@@ -40,7 +47,7 @@ public class ShortUrlApp : IShortUrlApp
         }
         else
         {
-            return string.Concat(shortUrl, shortId);
+            return string.Concat(shortUrl, shortUrlId);
         }
     }
 }

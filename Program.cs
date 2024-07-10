@@ -1,10 +1,14 @@
-﻿namespace ShortUrlSrv.App;
+﻿using ShortUrlSrv.App.DAL;
+
+namespace ShortUrlSrv.App;
 
 class Program
 {
     static void Main(string[] args)
     {
-        IShortUrlApp shortUrlApp = new ShortUrlApp();
+        IUrlDataStore urlDataStore = new UrlDataStore();
+        IShortUrlApp shortUrlApp=new ShortUrlApp(urlDataStore);
+        
         Console.WriteLine("Введите оригинальный URL:");
         string longUrl = Console.ReadLine();
 
