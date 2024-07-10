@@ -4,7 +4,7 @@ public interface IUrlDataStore
 {
     public bool DeleteShortID(string shortID);
 
-    public string SaveLongID(string longID);
+    public string SaveLongUrl(string longID);
 
-    public string GetLongID(string shortID);
+    public string GetLongUrl(string shortID);
 }
