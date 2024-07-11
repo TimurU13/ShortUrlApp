@@ -1,9 +1,41 @@
-﻿namespace ShortUrlSrv.App.DAL;
+﻿using System.IO;
+using System.Text;
+using System.Text.Json;
+
+namespace ShortUrlSrv.App.DAL;
 
 internal class UrlDataStore : IUrlDataStore
 {
-    private Dictionary<int, string> _urlStore = new();
-    private int _currentKey = 0;
+    private Dictionary<int, string> _urlStore;
+    private int _currentKey;
+    private string _path;
+
+    public UrlDataStore(string path)
+    {
+        _urlStore = new Dictionary<int, string>();
+        _currentKey = 0;
+        _path = path;
+
+        if (!File.Exists(_path))
+        {
+            File.Create(_path);
+        }
+        else
+        {
+            string json = File.ReadAllText(_path);
+            if (json.Length > 0)
+            {
+                _urlStore = JsonSerializer.Deserialize<Dictionary<int, string>>(json) ?? new Dictionary<int, string>();
+                _currentKey = _urlStore.Keys.Last();
+            }            
+        }
+    }
+
+    public void Dispose()
+    {
+        string json = JsonSerializer.Serialize(_urlStore);
+        File.WriteAllText(_path, json);
+    }
 
     public string SaveLongUrl(string longUrl)
     {

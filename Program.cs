@@ -7,7 +7,7 @@ namespace ShortUrlSrv.App
     {
         static void Main(string[] args)
         {
-            IUrlDataStore urlDataStore = new UrlDataStore();
+            IUrlDataStore urlDataStore = new UrlDataStore("store.txt");
             IShortUrlApp shortUrlApp = new ShortUrlApp(urlDataStore);
 
             while (true)
@@ -28,6 +28,7 @@ namespace ShortUrlSrv.App
                         GetLongUrl(shortUrlApp);
                         break;
                     case "3":
+                        urlDataStore.Dispose();
                         Console.WriteLine("Программа завершена.");
                         return;
                     default:

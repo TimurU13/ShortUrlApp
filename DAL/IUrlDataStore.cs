@@ -1,6 +1,6 @@
 ﻿namespace ShortUrlSrv.App.DAL;
 
-public interface IUrlDataStore
+public interface IUrlDataStore : IDisposable
 {
     public bool DeleteShortID(string shortID);
 
