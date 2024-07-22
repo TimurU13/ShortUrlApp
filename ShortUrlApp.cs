@@ -12,6 +12,7 @@ public class ShortUrlApp : IShortUrlApp
     public bool DeleteShortUrl(string shortUrl)
     {
         return _urlDataStore.DeleteShortID(shortUrl);
+          
     }
 
     public string GetLongUrl(string shortUrl)
@@ -30,7 +31,8 @@ public class ShortUrlApp : IShortUrlApp
         else
         {
             string shortId = uri.Segments[1];
-            return _urlDataStore.GetLongUrl(shortId);
+            (var result, bool status) = _urlDataStore.GetLongUrl(shortId);
+            return result;
         }
 
     }

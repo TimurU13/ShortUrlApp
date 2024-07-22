@@ -6,5 +6,5 @@ public interface IUrlDataStore : IDisposable
 
     public string SaveLongUrl(string longID);
 
-    public string GetLongUrl(string shortID);
+    public (string, bool) GetLongUrl(string shortID);
 }

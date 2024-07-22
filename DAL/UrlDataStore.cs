@@ -49,13 +49,13 @@ internal class UrlDataStore : IUrlDataStore
 
     }
 
-    public string GetLongUrl(string shortID)
+    public (string, bool) GetLongUrl(string shortID)
     {
 
         int searchedKey = int.Parse(shortID);
         if (searchedKey > _currentKey)
-            throw new IndexOutOfRangeException();
-        return _urlStore[searchedKey];
+           return (null, false);
+        return (_urlStore[searchedKey], true);
 
     }
 
@@ -64,7 +64,7 @@ internal class UrlDataStore : IUrlDataStore
     {
         int searchedKey = int.Parse(shortID);
         if (searchedKey > _currentKey)
-            throw new IndexOutOfRangeException();
+            return false;
         else
             _urlStore.Remove(searchedKey);
         return true;
