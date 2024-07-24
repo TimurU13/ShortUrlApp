@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8D008927-143C-47FA-9C0E-02E2D2F66B1D}|ShortUrlSrv.App.csproj|c:\\users\\ismet\\source\\repos\\shorturlapp\\shorturlapp\\dal\\urldatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D008927-143C-47FA-9C0E-02E2D2F66B1D}|ShortUrlSrv.App.csproj|solutionrelative:dal\\urldatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8D008927-143C-47FA-9C0E-02E2D2F66B1D}|ShortUrlSrv.App.csproj|c:\\users\\ismet\\source\\repos\\shorturlapp\\shorturlapp\\dal\\iurldatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D008927-143C-47FA-9C0E-02E2D2F66B1D}|ShortUrlSrv.App.csproj|solutionrelative:dal\\iurldatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D008927-143C-47FA-9C0E-02E2D2F66B1D}|ShortUrlSrv.App.csproj|c:\\users\\ismet\\source\\repos\\shorturlapp\\shorturlapp\\referenceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D008927-143C-47FA-9C0E-02E2D2F66B1D}|ShortUrlSrv.App.csproj|solutionrelative:referenceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\ReferenceService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ReferenceService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,6 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UrlDataStore.cs",
+              "DocumentMoniker": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\DAL\\UrlDataStore.cs",
+              "RelativeDocumentMoniker": "DAL\\UrlDataStore.cs",
+              "ToolTip": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\DAL\\UrlDataStore.cs",
+              "RelativeToolTip": "DAL\\UrlDataStore.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAACEAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T13:48:02.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "IUrlDataStore.cs",
               "DocumentMoniker": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\DAL\\IUrlDataStore.cs",
               "RelativeDocumentMoniker": "DAL\\IUrlDataStore.cs",
@@ -35,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ReferenceService.cs",
               "DocumentMoniker": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\ReferenceService.cs",
               "RelativeDocumentMoniker": "ReferenceService.cs",
@@ -43,8 +60,7 @@
               "RelativeToolTip": "ReferenceService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T21:27:52.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T21:27:52.717Z"
             }
           ]
         }
