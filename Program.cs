@@ -1,15 +1,18 @@
 ﻿using System;
+using System.Text;
 using ShortUrlSrv.App.DAL;
+
 
 namespace ShortUrlSrv.App
 {
     class Program
     {
         static void Main(string[] args)
+
         {
             IUrlDataStore urlDataStore = new UrlDataStore("store.txt");
             IShortUrlApp shortUrlApp = new ShortUrlApp(urlDataStore);
-
+            Console.OutputEncoding = Encoding.UTF8;
             while (true)
             {
                 Console.WriteLine("Выберите действие:");

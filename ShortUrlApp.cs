@@ -1,5 +1,6 @@
 ﻿using ShortUrlSrv.App.DAL;
 
+
 namespace ShortUrlSrv.App;
 
 public class ShortUrlApp : IShortUrlApp

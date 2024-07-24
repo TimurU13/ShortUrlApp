@@ -42,11 +42,13 @@ internal class UrlDataStore : IUrlDataStore
         if (string.IsNullOrEmpty(longUrl))
             throw new Exception("Ссылка пустая!");
         if (_urlStore.ContainsKey(_currentKey))
-            _urlStore.Add(_currentKey, longUrl);
-        else
-            _urlStore.Add(++_currentKey, longUrl);
+        {
+           if (_currentKey == (_urlStore.Count - 1))
+                _urlStore.Add(++_currentKey, longUrl);
+        }
+        else _urlStore.Add(_currentKey, longUrl);
         return _currentKey.ToString();
-
+            
     }
 
     public (string, bool) GetLongUrl(string shortID)
