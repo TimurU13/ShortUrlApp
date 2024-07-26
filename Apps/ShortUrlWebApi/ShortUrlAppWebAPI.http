@@ -1,0 +1,8 @@
+@ShortUrlAppWebAPI_HostAddress = https://localhost:7023
+### Get short URL 
+GET https://localhost:7023/ShortUrlApi/short
+Accept: application/json
+
+GET {{ShortUrlAppWebAPI_HostAddress}}/shorturlapi/short
+
+###
