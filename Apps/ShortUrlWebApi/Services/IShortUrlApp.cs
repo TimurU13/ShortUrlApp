@@ -1,5 +1,4 @@
-﻿namespace ShortUrlSrv.App;
-
+﻿namespace ShortUrlAppWebAPI.Services;
 public interface IShortUrlApp
 {
     public string SaveUrl(string longUrl);

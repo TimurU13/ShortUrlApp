@@ -1,17 +1,19 @@
-﻿using ShortUrlSrv.App.DAL;
-
-namespace ShortUrlSrv.App;
-
+﻿using ShortUrlAppWebAPI.DAL;
+namespace ShortUrlAppWebAPI.Services;
 public class ShortUrlApp : IShortUrlApp
 {
     private readonly IUrlDataStore _urlDataStore;
     public ShortUrlApp(IUrlDataStore urlDataStore)
     {
+
         _urlDataStore = urlDataStore;
     }
     public bool DeleteShortUrl(string shortUrl)
     {
-        return _urlDataStore.DeleteShortID(shortUrl);
+        Uri uri = new Uri(shortUrl);
+        string shortId = uri.Segments[1];
+        return _urlDataStore.DeleteShortID(shortId);
+
     }
 
     public string GetLongUrl(string shortUrl)
@@ -30,14 +32,15 @@ public class ShortUrlApp : IShortUrlApp
         else
         {
             string shortId = uri.Segments[1];
-            return _urlDataStore.GetLongUrl(shortId);
+            (var result, bool status) = _urlDataStore.GetLongUrl(shortId);
+            return result;
         }
 
     }
     public string SaveUrl(string longUrl)
     {
         string shortUrl = "https://myshorturl.io/";
-        string shortUrlId=_urlDataStore.SaveLongUrl(longUrl);
+        string shortUrlId = _urlDataStore.SaveLongUrl(longUrl);
         Uri uriResult;
         bool result = Uri.TryCreate(longUrl, UriKind.Absolute, out uriResult)
             && (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps);
