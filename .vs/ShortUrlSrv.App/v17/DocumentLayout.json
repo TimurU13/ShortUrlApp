@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56698B00-CBFC-4901-998F-81605C500492}|ShortUrlSrv.App.csproj|c:\\users\\ismet\\source\\repos\\shorturlapp\\shorturlapp\\dal\\urldatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56698B00-CBFC-4901-998F-81605C500492}|ShortUrlSrv.App.csproj|solutionrelative:dal\\urldatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56698B00-CBFC-4901-998F-81605C500492}|ShortUrlSrv.App.csproj|c:\\users\\ismet\\source\\repos\\shorturlapp\\shorturlapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56698B00-CBFC-4901-998F-81605C500492}|ShortUrlSrv.App.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56698B00-CBFC-4901-998F-81605C500492}|ShortUrlSrv.App.csproj|c:\\users\\ismet\\source\\repos\\shorturlapp\\shorturlapp\\ishorturlapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56698B00-CBFC-4901-998F-81605C500492}|ShortUrlSrv.App.csproj|solutionrelative:ishorturlapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56698B00-CBFC-4901-998F-81605C500492}|ShortUrlSrv.App.csproj|c:\\users\\ismet\\source\\repos\\shorturlapp\\shorturlapp\\dal\\iurldatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56698B00-CBFC-4901-998F-81605C500492}|ShortUrlSrv.App.csproj|solutionrelative:dal\\iurldatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56698B00-CBFC-4901-998F-81605C500492}|ShortUrlSrv.App.csproj|c:\\users\\ismet\\source\\repos\\shorturlapp\\shorturlapp\\shorturlapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56698B00-CBFC-4901-998F-81605C500492}|ShortUrlSrv.App.csproj|solutionrelative:shorturlapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShortUrlApp.cs",
+              "DocumentMoniker": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\ShortUrlApp.cs",
+              "RelativeDocumentMoniker": "ShortUrlApp.cs",
+              "ToolTip": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\ShortUrlApp.cs",
+              "RelativeToolTip": "ShortUrlApp.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAswCQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T21:19:55.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UrlDataStore.cs",
+              "DocumentMoniker": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\DAL\\UrlDataStore.cs",
+              "RelativeDocumentMoniker": "DAL\\UrlDataStore.cs",
+              "ToolTip": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\DAL\\UrlDataStore.cs",
+              "RelativeToolTip": "DAL\\UrlDataStore.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAADQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T19:49:27.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUrlDataStore.cs",
+              "DocumentMoniker": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\DAL\\IUrlDataStore.cs",
+              "RelativeDocumentMoniker": "DAL\\IUrlDataStore.cs",
+              "ToolTip": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\DAL\\IUrlDataStore.cs",
+              "RelativeToolTip": "DAL\\IUrlDataStore.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T19:49:26.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAUwCoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T19:18:34.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IShortUrlApp.cs",
+              "DocumentMoniker": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\IShortUrlApp.cs",
+              "RelativeDocumentMoniker": "IShortUrlApp.cs",
+              "ToolTip": "C:\\Users\\Ismet\\source\\repos\\ShortUrlApp\\ShortUrlApp\\IShortUrlApp.cs",
+              "RelativeToolTip": "IShortUrlApp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T19:18:31.814Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
