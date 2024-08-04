@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "NeurolabUtils": {
+      "commandName": "Project",
+      "commandLineArgs": "-c normalize -p car,bus,motorcycle,truck -r bus,car,truck,motorcycle -i C:\\\\dataset\\\\vehicles_train -c resize -i C:\\ConvertPhoto\\images1"
+    }
+  }
+}
+//-c restruct -i C:\\dataset\\vehicles_train -o C:\\dataset\\vehicles_train\\output -p 20 -c total -i C:\\dataset\\input\\ -c cut -class Car bus 
