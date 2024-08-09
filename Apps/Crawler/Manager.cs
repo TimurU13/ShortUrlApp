@@ -40,11 +40,11 @@ public class Manager : IManager
                     }
                     catch (Exception ex)
                     {
-                        _logger.LogError(ex, $"Error URL {siteUrl}");
+                        _logger.LogError(ex, $"Error processing URL {siteUrl}");
                         _requests[requestId] = (Status.Failed, null);
                     }
                 }
-                await Task.Delay(1000);
+                await Task.Delay(100);
             }
         });
         return requestId;
