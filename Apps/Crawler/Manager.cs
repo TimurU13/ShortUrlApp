@@ -1,7 +1,6 @@
 ﻿using Crawler.Interfaces;
 using System.Collections.Concurrent;
 namespace Crawler;
-
 public class Manager : IManager
 {
     private readonly IWorkerPool _workerPool;

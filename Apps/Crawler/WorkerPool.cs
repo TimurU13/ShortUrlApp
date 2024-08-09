@@ -7,14 +7,12 @@ public class WorkerPool : IWorkerPool
     private readonly ConcurrentQueue<Func<Task>> _tasks;
     private readonly SemaphoreSlim _semaphore;
     private readonly ILogger<WorkerPool> _logger;
-
     public WorkerPool(ILogger<WorkerPool> logger)
     {
         _tasks = new ConcurrentQueue<Func<Task>>();
         _semaphore = new SemaphoreSlim(3);
         _logger = logger;
     }
-
     public void InitializeWorkers(int workerCount)
     {
         _semaphore.Release(workerCount);

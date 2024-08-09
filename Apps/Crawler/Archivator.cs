@@ -1,6 +1,5 @@
 ﻿using Crawler.Interfaces;
 using System.IO.Compression;
-
 namespace Crawler
 {
     public class Archivator : IArchivator
