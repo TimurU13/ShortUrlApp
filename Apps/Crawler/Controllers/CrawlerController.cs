@@ -10,7 +10,6 @@ namespace Crawler.Controllers
     {
         private readonly IManager _manager;
         private readonly ILogger<CrawlerController> _logger;
-
         public CrawlerController(IManager manager, ILogger<CrawlerController> logger)
         {
             _manager = manager;
@@ -40,9 +39,7 @@ namespace Crawler.Controllers
             var (status, downloadUrl) = _manager.GetStatus(id);
 
             if (status == Status.NotFound)
-            {
                 return NotFound("Request not found");
-            }
 
             var response = new GetStatusDTO
             {
